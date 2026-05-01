@@ -1,0 +1,847 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/es-javaee-juin-2012/arquitectura-por-capas-de-una-aplicacion-java.html">
+      
+      
+        <link rel="prev" href="introduccion.html">
+      
+      
+        <link rel="next" href="herramientas-utilizadas-en-este-documento.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>2. Arquitectura por capas de una aplicación Java - Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-arquitectura-por-capas-de-una-aplicacion-java" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish" class="md-header__button md-logo" aria-label="Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. Arquitectura por capas de una aplicación Java
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/es-javaee-juin-2012" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish" class="md-nav__button md-logo" aria-label="Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/es-javaee-juin-2012" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenido
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduccion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="arquitectura-por-capas-de-una-aplicacion-java.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Arquitectura por capas de una aplicación Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="herramientas-utilizadas-en-este-documento.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Herramientas utilizadas en este documento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="-o-de-jpa-una-vision-general.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.  o de JPA: una visión general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-1-arquitectura-spring--jpa.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Versión 1: Arquitectura Spring / JPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-2-arquitectura-openejb--jpa.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Versión 2: Arquitectura OpenEJB / JPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-3-portar-la-aplicacion-pam-a-un-servidor-de-aplicaciones-glassfish.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Versión 3: Portar la aplicación PAM a un servidor de aplicaciones GlassFish
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-4---clienteservidor-en-una-arquitectura-de-servicios-web.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Versión 4 – Cliente/servidor en una arquitectura de servicios web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduccion-a-java-server-faces.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Introducción a Java Server Faces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-5---aplicacion-web-pam--jsf.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Versión 5 - Aplicación web PAM / JSF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-6---integracion-de-la-capa-web-en-una-arquitectura-jsfejb-de-tres-capas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Versión 6 - Integración de la capa web en una arquitectura JSF/EJB de tres capas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-7-aplicacion-web-pam-con-multiples-vistas-y-paginas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Versión 7: aplicación web PAM con múltiples vistas y páginas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-8-portar-la-aplicacion-a-un-entorno-spring--tomcat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Versión 8: Portar la aplicación a un entorno Spring / Tomcat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-9-implementacion-de-la-capa-web-con-primefaces.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Versión 9: Implementación de la capa web con PrimeFaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="architecture-en-couches"></a>
+<a id="refheading87347112820228"></a></p>
+<h1 id="2-arquitectura-por-capas-de-una-aplicacion-java">2. <span style="color: #365f91">Arquitectura por capas de una aplicación Java</span></h1>
+<p>Una aplicación Java suele dividirse en capas, cada una con una función bien definida. Consideremos una arquitectura común, la arquitectura de tres capas:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E80000011C9BFD876E.png" width="680" height="109" style="display:inline-block; margin:4px;width:17.999cm;height:2.891cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E80000011C9BFD876E.png" /></td></tr></table>
+
+<ul>
+  <li>La capa [1], denominada aquí [ui] (interfaz de usuario), es la capa que interactúa con el usuario a través de una interfaz gráfica de usuario Swing, una interfaz de consola o una interfaz web. Su función es proporcionar datos del usuario a la capa [2] o presentar al usuario los datos proporcionados por la capa [2].
+  </li>
+  <li>La capa [2], denominada aquí [business], es la capa que aplica las denominadas reglas de negocio —es decir, la lógica específica de la aplicación— sin preocuparse por el origen de los datos que recibe ni por el destino de los resultados que produce.
+  </li>
+  <li>La capa [3], denominada aquí [DAO] (objeto de acceso a datos), es la capa que proporciona a la capa [2] datos prealmacenados (archivos, bases de datos, etc.) y almacena algunos de los resultados proporcionados por la capa [2].
+  </li>
+</ul>
+
+<p>Existen varias formas de implementar la capa [DAO]. Veamos algunas de ellas:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000074E000001438203730E.png" width="680" height="118" style="display:inline-block; margin:4px;width:17.999cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/100000000000074E000001438203730E.png" /></td></tr></table>
+
+<p>La capa [JDBC] anterior es la capa estándar que se utiliza en Java para acceder a las bases de datos. Aísla la capa [DAO] del SGBD que gestiona la base de datos. En teoría, se puede cambiar de SGBD sin modificar el código de la capa [DAO]. A pesar de esta ventaja, la API JDBC presenta ciertos inconvenientes:</p>
+<ul>
+  <li>Es probable que todas las operaciones en el SGBD lancen la excepción SQLException. Esto obliga al código de llamada (la capa [DAO] en este caso) a envolverlas en bloques try/catch, lo que hace que el código resulte bastante prolijo.
+  </li>
+  <li>La capa [DAO] no es completamente independiente del SGBD. Por ejemplo, los SGBD tienen métodos propios para generar automáticamente valores de clave primaria que la capa [DAO] no puede ignorar. Por lo tanto, al insertar un registro:
+    <ul>
+      <li>Con Oracle, la capa [DAO] debe obtener primero un valor para la clave primaria del registro y, a continuación, insertar el registro.
+      </li>
+      <li>Con SQL Server, la capa [DAO] inserta el registro, al que el SGBD asigna automáticamente un valor de clave primaria, valor que se devuelve a la capa [DAO].
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Estas diferencias pueden eliminarse utilizando procedimientos almacenados. En el ejemplo anterior, la capa [DAO] llamará a un procedimiento almacenado en Oracle o SQL Server que tenga en cuenta las características específicas del SGBD. Estos quedarán ocultos a la capa [DAO]. No obstante, aunque cambiar el SGBD no requerirá reescribir la capa [DAO], sí será necesario reescribir los procedimientos almacenados. Esto puede no considerarse un factor decisivo.</p>
+<p>Se han realizado numerosos esfuerzos para aislar la capa [DAO] de los aspectos propietarios de los SGBD. Una solución que ha tenido mucho éxito en este ámbito en los últimos años es <strong>Hibernate</strong>:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000074F0000011BD92904A5.png" width="680" height="103" style="display:inline-block; margin:4px;width:17.999cm;height:2.722cm;" class="odt-zoomable" data-zoom-src="images/100000000000074F0000011BD92904A5.png" /></td></tr></table>
+
+<p>La capa [Hibernate] se sitúa entre la capa [DAO] escrita por el desarrollador y la capa [JDBC]. Hibernate es un ORM (mapeador objeto-relacional), una herramienta que sirve de puente entre el mundo relacional de las bases de datos y el de los objetos manipulados por Java. El desarrollador de la capa [DAO] ya no ve la capa [JDBC] ni las tablas de la base de datos cuyo contenido desea utilizar. Solo ve la representación objetual de la base de datos, proporcionada por la capa [Hibernate]. El puente entre las tablas de la base de datos y los objetos manipulados por la capa [DAO] se establece principalmente de dos maneras:</p>
+<ul>
+  <li>a través de archivos de configuración de estilo XML
+  </li>
+  <li>a través de anotaciones Java en el código, una técnica disponible solo desde JDK 1.5
+  </li>
+</ul>
+
+<p>La capa [Hibernate] es una capa de abstracción diseñada para ser lo más transparente posible. El escenario ideal es que el desarrollador de la capa [DAO] no sea en absoluto consciente de que está trabajando con una base de datos. Esto es factible si no es él quien escribe la configuración que une los mundos relacional y orientado a objetos. Configurar este puente es bastante delicado y requiere cierta experiencia.</p>
+<p>La capa de objetos [4], que refleja la base de datos, se denomina «contexto de persistencia». Una capa [DAO] basada en Hibernate realiza operaciones de persistencia (CRUD: crear, leer, actualizar, eliminar) sobre los objetos del contexto de persistencia; Hibernate traduce estas operaciones a sentencias SQL que ejecuta la capa JDBC. Para las operaciones de consulta de la base de datos (SQL SELECT), Hibernate proporciona a los desarrolladores un HQL (Hibernate Query Language) para consultar el contexto de persistencia [4] en lugar de la propia base de datos.</p>
+<p>Hibernate es popular, pero complejo de dominar. La curva de aprendizaje, que a menudo se presenta como fácil, es en realidad bastante pronunciada. En cuanto se tiene una base de datos con tablas que presentan relaciones uno a muchos o muchos a muchos, la configuración del puente relacional/objeto queda fuera del alcance del principiante medio. Los errores de configuración pueden dar lugar a aplicaciones con un rendimiento deficiente.</p>
+<p>A la luz del éxito de los productos ORM, Sun, el creador de Java, decidió estandarizar una capa ORM mediante una especificación llamada JPA (Java Persistence API), que se lanzó junto con Java 5. La especificación JPA ha sido implementada por diversos productos: <strong>Hibernate</strong>, <strong>TopLink, EclipseLink, OpenJPA, etc.</strong> Con JPA, la arquitectura anterior se convierte en la siguiente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007BC0000012E769EA268.png" width="680" height="104" style="display:inline-block; margin:4px;width:17.999cm;height:2.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BC0000012E769EA268.png" /></td></tr></table>
+
+<p>La capa [DAO] interactúa ahora con la especificación JPA, un conjunto de interfaces. Los desarrolladores han ganado en términos de estandarización. Anteriormente, si un desarrollador cambiaba su capa ORM, también tenía que cambiar su capa [DAO], que se había escrito para interactuar con un ORM específico. Ahora, escribirán una capa [DAO] que interactúe con una capa JPA. Independientemente del producto que implemente la capa JPA, la interfaz que se presenta a la capa [DAO] sigue siendo la misma.</p>
+<p>En este documento, utilizaremos una capa [DAO] construida sobre una capa JPA/Hibernate o JPA/EclipseLink. También utilizaremos el marco Spring 2.8 para enlazar estas capas entre sí.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000008410000017C07262FF8.png" width="680" height="122" style="display:inline-block; margin:4px;width:17.999cm;height:3.237cm;" class="odt-zoomable" data-zoom-src="images/10000000000008410000017C07262FF8.png" /></td></tr></table>
+
+<p>La principal ventaja de Spring es que permite vincular capas mediante la configuración en lugar de hacerlo en el código. Así, si es necesario sustituir la implementación de JPA/Hibernate por una implementación de Hibernate sin JPA —por ejemplo, porque la aplicación se ejecuta en un entorno JDK 1.4 que no es compatible con JPA—, este cambio en la implementación de la capa [DAO] no afecta al código de la capa [de negocio]. Solo es necesario modificar el archivo de configuración de Spring que vincula las capas entre sí.</p>
+<p>Con Java EE 5, existe otra solución: implementar las capas [de negocio] y [DAO] utilizando EJB3 (Enterprise JavaBeans versión 3):</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000008360000018F24F4901E.png" width="680" height="129" style="display:inline-block; margin:4px;width:17.999cm;height:3.417cm;" class="odt-zoomable" data-zoom-src="images/10000000000008360000018F24F4901E.png" /></td></tr></table>
+
+<p>Veremos que esta solución no difiere mucho de la que utiliza Spring. El entorno Java EE 5 está disponible en los denominados servidores de aplicaciones, como <em>Sun Application Server 9.x (Glassfish), JBoss Application Server, Oracle Container for Java (OC4J),</em> etc. Un servidor de aplicaciones es, en esencia, un servidor de aplicaciones web. También existen los denominados entornos EE 5 «autónomos», es decir, aquellos que pueden utilizarse fuera de un servidor de aplicaciones. Este es el caso de JBoss EJB3 u OpenEJB.</p>
+<p>En un entorno EE5, las capas se implementan mediante objetos denominados EJB (Enterprise Java Beans). En versiones anteriores de EE, los EJB (EJB 2.x) eran conocidos por ser difíciles de implementar y probar, y en ocasiones ofrecían un rendimiento inferior al esperado. Se distingue entre los beans «entidad» de EJB 2.x y los beans «sesión» de EJB 2.x. En resumen, una «entidad» EJB 2.x corresponde a una fila de una tabla de base de datos, y una «sesión» EJB 2.x es un objeto utilizado para implementar las capas de [lógica de negocio] y [DAO] de una arquitectura multicapa. Una de las principales críticas a las capas implementadas con EJB es que solo pueden utilizarse dentro de contenedores EJB, un servicio proporcionado por el entorno EE (Enterprise Edition). Este entorno, cuya configuración es más compleja que la de un entorno SE (Standard Edition), puede disuadir a los desarrolladores de realizar pruebas con frecuencia. No obstante, existen entornos de desarrollo Java que facilitan el uso de un servidor de aplicaciones al automatizar la implementación de EJB en el servidor: <em>Eclipse, NetBeans, JDeveloper, IntelliJ IDEA</em>. En este caso, utilizaremos <em>NetBeans 6.8</em> y el servidor de aplicaciones <em>GlassFish v3</em>.</p>
+<p>El marco <strong>Spring</strong> se creó como respuesta a la complejidad de EJB2. En un entorno SE, Spring proporciona un número significativo de los servicios que suelen ofrecer los entornos EE. Por ejemplo, en la sección «Persistencia de datos», Spring proporciona los grupos de conexiones y los gestores de transacciones que requieren las aplicaciones. La aparición de Spring ha fomentado una cultura de pruebas unitarias, que se ha vuelto más fácil de implementar en el contexto SE que en el contexto EE. Spring permite la implementación de capas de aplicación utilizando objetos Java estándar (POJO, Plain Old/Ordinary Java Object), lo que permite su reutilización en otros contextos.  Por último, integra numerosas herramientas de terceros de forma bastante transparente, en particular herramientas de persistencia como Hibernate, EclipseLink, iBatis, ...  </p>
+<p>Java EE 5 se diseñó para subsanar las deficiencias de la especificación EJB 2. EJB 2.x ha evolucionado hasta convertirse en EJB 3. Se trata de POJO anotados con etiquetas que los convierten en objetos especiales cuando se encuentran dentro de un contenedor EJB 3. Dentro del contenedor, el EJB 3 puede aprovechar los servicios del contenedor (grupo de conexiones, gestor de transacciones, etc.). Fuera del contenedor EJB 3, el EJB 3 se convierte en un objeto Java estándar. Sus anotaciones EJB se ignoran.</p>
+<p>Anteriormente, hemos representado Spring y un contenedor EJB 3 como una posible infraestructura (marco) para nuestra arquitectura multicapa. Es esta infraestructura la que proporcionará los servicios que necesitamos: un grupo de conexiones y un gestor de transacciones.</p>
+<ul>
+  <li>Con Spring, las capas se implementarán utilizando POJO. Estos tendrán acceso a los servicios de Spring (pool de conexiones, gestor de transacciones) a través de la inyección de dependencias en estos POJO: al construirlos, Spring inyecta referencias a los servicios que necesitarán.
+  </li>
+  <li>Con el contenedor EJB3, las capas se implementarán utilizando EJB. Una arquitectura en capas implementada con EJB3 no es muy diferente de una implementada con POJO instanciados por Spring. Encontraremos muchas similitudes.
+  </li>
+</ul>
+
+<ul>
+  <li>Por último, presentaremos un ejemplo de una aplicación web de múltiples capas:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000082A000001A616D6D841.png" width="680" height="137" style="display:inline-block; margin:4px;width:17.999cm;height:3.634cm;" class="odt-zoomable" data-zoom-src="images/100000000000082A000001A616D6D841.png" /></td></tr></table>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Este curso-tutorial escrito por <strong>Serge Tahé</strong> se pone a disposición del público según los términos de la
+        <em>Licencia Creative Commons Reconocimiento – Sin uso comercial –
+        Compartir en las mismas condiciones 3.0 no adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
