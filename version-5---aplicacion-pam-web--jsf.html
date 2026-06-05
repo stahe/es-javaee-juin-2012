@@ -12,13 +12,13 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/es-javaee-juin-2012/version-5---aplicacion-web-pam--jsf.html">
+        <link rel="canonical" href="https://stahe.github.io/es-javaee-juin-2012/version-5---aplicacion-pam-web--jsf.html">
       
       
         <link rel="prev" href="introduccion-a-java-server-faces.html">
       
       
-        <link rel="next" href="version-6---integracion-de-la-capa-web-en-una-arquitectura-jsfejb-de-tres-capas.html">
+        <link rel="next" href="version-6---integracion-de-la-capa-web-en-una-arquitectura-de-tres-capas-jsf--ejb.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>10. Versión 5 - Aplicación web PAM / JSF - Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish</title>
+        <title>10. Version 5 - Aplicación PAM Web / JSF - Introducción a Java EE con el IDE de NetBeans y el servidor de aplicaciones GlassFish</title>
       
     
     
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -92,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#10-version-5-aplicacion-web-pam-jsf" class="md-skip">
+        <a href="#10-version-5-aplicacion-pam-web-jsf" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              10. Versión 5 - Aplicación web PAM / JSF
+              10. Version 5 - Aplicación PAM Web / JSF
             
           </span>
         </div>
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="arquitectura-por-capas-de-una-aplicacion-java.html" class="md-nav__link">
+      <a href="arquitectura-de-una-aplicacion-java-en-capas.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Arquitectura por capas de una aplicación Java
+    2. Arquitectura de una aplicación Java en capas
   
 
     
@@ -357,14 +359,14 @@
   
   
     <li class="md-nav__item">
-      <a href="herramientas-utilizadas-en-este-documento.html" class="md-nav__link">
+      <a href="las-herramientas-del-documento.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Herramientas utilizadas en este documento
+    3. Las herramientas del documento
   
 
     
@@ -384,14 +386,14 @@
   
   
     <li class="md-nav__item">
-      <a href="-o-de-jpa-una-vision-general.html" class="md-nav__link">
+      <a href="jpa-resumen-de-.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4.  o de JPA: una visión general
+    4. JPA Resumen de 
   
 
     
@@ -418,7 +420,7 @@
   <span class="md-ellipsis">
     
   
-    5. Versión 1: Arquitectura Spring / JPA
+    5. Version 1: Arquitectura Spring / JPA
   
 
     
@@ -445,7 +447,7 @@
   <span class="md-ellipsis">
     
   
-    6. Versión 2: Arquitectura OpenEJB / JPA
+    6. Version 2: Arquitectura OpenEJB / JPA
   
 
     
@@ -465,14 +467,14 @@
   
   
     <li class="md-nav__item">
-      <a href="version-3-portar-la-aplicacion-pam-a-un-servidor-de-aplicaciones-glassfish.html" class="md-nav__link">
+      <a href="version-3-portabilidad-de-la-aplicacion-pam-a-un-servidor-de-aplicaciones-glassfish.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. Versión 3: Portar la aplicación PAM a un servidor de aplicaciones GlassFish
+    7. Version 3: Portabilidad de la aplicación PAM a un servidor de aplicaciones Glassfish
   
 
     
@@ -492,14 +494,14 @@
   
   
     <li class="md-nav__item">
-      <a href="version-4---clienteservidor-en-una-arquitectura-de-servicios-web.html" class="md-nav__link">
+      <a href="version-4---clienteservidor-en-una-arquitectura-de-servicio-web.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. Versión 4 – Cliente/servidor en una arquitectura de servicios web
+    8. Version 4 – cliente/servidor en una arquitectura de servicio web
   
 
     
@@ -562,7 +564,7 @@
   <span class="md-ellipsis">
     
   
-    10. Versión 5 - Aplicación web PAM / JSF
+    10. Version 5 - Aplicación PAM Web / JSF
   
 
     
@@ -573,14 +575,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="version-5---aplicacion-web-pam--jsf.html" class="md-nav__link md-nav__link--active">
+      <a href="version-5---aplicacion-pam-web--jsf.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Versión 5 - Aplicación web PAM / JSF
+    10. Version 5 - Aplicación PAM Web / JSF
   
 
     
@@ -617,10 +619,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#102-como-funciona-la-aplicacion" class="md-nav__link">
+  <a href="#102-funcionamiento-de-la-aplicacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.2. Cómo funciona la aplicación
+        10.2. Funcionamiento de la aplicación
       
     </span>
   </a>
@@ -631,19 +633,19 @@
   <a href="#103-el-proyecto-netbeans" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3. El proyecto NetBeans
+        10.3. El proyecto Netbeans
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="10.3. El proyecto NetBeans">
+    <nav class="md-nav" aria-label="10.3. El proyecto Netbeans">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1031-archivos-de-configuracion" class="md-nav__link">
+  <a href="#1031-los-archivos-de-configuracion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3.1. Archivos de configuración
+        10.3.1. Los archivos de configuración
       
     </span>
   </a>
@@ -684,10 +686,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#1035-la-capa-de-negocio" class="md-nav__link">
+  <a href="#1035-la-capa-metier" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3.5. La capa [de negocio]
+        10.3.5. La capa [métier]
       
     </span>
   </a>
@@ -715,7 +717,7 @@
   <a href="#1041-paso-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.4.1. Paso 1
+        10.4.1. paso 1
       
     </span>
   </a>
@@ -748,7 +750,7 @@
   <a href="#1044-paso-4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.4.4. Paso 4
+        10.4.4. paso 4
       
     </span>
   </a>
@@ -775,14 +777,14 @@
   
   
     <li class="md-nav__item">
-      <a href="version-6---integracion-de-la-capa-web-en-una-arquitectura-jsfejb-de-tres-capas.html" class="md-nav__link">
+      <a href="version-6---integracion-de-la-capa-web-en-una-arquitectura-de-tres-capas-jsf--ejb.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    11. Versión 6 - Integración de la capa web en una arquitectura JSF/EJB de tres capas
+    11. Version 6 - Integración de la capa web en una arquitectura de tres capas JSF / EJB
   
 
     
@@ -802,14 +804,14 @@
   
   
     <li class="md-nav__item">
-      <a href="version-7-aplicacion-web-pam-con-multiples-vistas-y-paginas.html" class="md-nav__link">
+      <a href="version-7---aplicacion-web-pam-multivista--multipagina.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. Versión 7: aplicación web PAM con múltiples vistas y páginas
+    12. Version 7 - Aplicación web PAM multivista / multipágina
   
 
     
@@ -836,7 +838,7 @@
   <span class="md-ellipsis">
     
   
-    13. Versión 8: Portar la aplicación a un entorno Spring / Tomcat
+    13. Version 8: Portar la aplicación a un entorno Spring / Tomcat
   
 
     
@@ -863,7 +865,7 @@
   <span class="md-ellipsis">
     
   
-    14. Versión 9: Implementación de la capa web con PrimeFaces
+    14. Version 9: Implementación de la capa web con Primefaces
   
 
     
@@ -893,105 +895,105 @@
 
 
 
-<p><a id="refheading87541112820228"></a></p>
-<h1 id="10-version-5-aplicacion-web-pam-jsf">10. <span style="color: #365f91">Versión 5 - Aplicación web PAM / JSF</span></h1>
-<p><a id="refheading87543112820228"></a></p>
+<p><span id="refheading87541112820228" name="refheading87541112820228" class="odt-bookmark-anchor"></span></p>
+<h1 id="10-version-5-aplicacion-pam-web-jsf">10. <span style="color: #365f91">Version 5 - Aplicación PAM Web / JSF</span></h1>
+<p><span id="refheading87543112820228" name="refheading87543112820228" class="odt-bookmark-anchor"></span></p>
 <h2 id="101-arquitectura-de-la-aplicacion">10.1. <span style="color: #4f81bd">Arquitectura de la aplicación</span></h2>
 <p>La arquitectura de la aplicación web PAM será la siguiente:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000544000001171F339ED5.png" width="674" height="140" style="display:inline-block; margin:4px;width:17.833cm;height:3.692cm;" class="odt-zoomable" data-zoom-src="images/1000000000000544000001171F339ED5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000544000001171F339ED5.png" width="674" height="140" style="display:inline-block; margin:4px;width:17.833cm;height:3.692cm;" class="odt-zoomable" data-zoom-src="images/1000000000000544000001171F339ED5.png" /></td></tr></table>
 
-<p>En esta versión, el servidor GlassFish alojará todas las capas de la aplicación:</p>
+<p>En este version, el servidor Glassfish alojará todas las capas de la aplicación:</p>
 <ul>
-  <li>la capa [web] está alojada en el contenedor de servlets del servidor (1 abajo)
+  <li>la capa [web] está alojada en el contenedor de servlets del servidor (1 a continuación)
   </li>
-  <li>las demás capas [lógica de negocio, DAO, JPA] son alojadas por el contenedor EJB3 del servidor (2 abajo)
+  <li>las demás capas [metier, DAO, jpa] están alojadas en el contenedor EJB3 del servidor (2 a continuación)
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CE000000B0EAA6A0E4.png" width="615" height="88" style="display:inline-block; margin:4px;width:16.272cm;height:2.328cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CE000000B0EAA6A0E4.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004CE000000B0EAA6A0E4.png" width="615" height="88" style="display:inline-block; margin:4px;width:16.272cm;height:2.328cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CE000000B0EAA6A0E4.png" /></td></tr></table>
 
-<p>Los componentes [lógica de negocio, DAO] de la aplicación que se ejecutan en el contenedor EJB3 ya se han implementado en la aplicación cliente/servidor descrita en la sección<a href="#serveur-ejb-sunas9"><u><span style="color: #0563c1"> 7.1</span></u></a>, que tenía la siguiente arquitectura:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050F0000012365A8B684.png" width="648" height="146" style="display:inline-block; margin:4px;width:17.133cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/100000000000050F0000012365A8B684.png" /></td></tr></table>
+<p>Los elementos [metier, DAO] de la aplicación que se ejecutan en el contenedor EJB3 ya se han descrito en la aplicación cliente/servidor analizada en el apartado<a href="version-3-portabilidad-de-la-aplicacion-pam-a-un-servidor-de-aplicaciones-glassfish.html#serveur-ejb-sunas9"><u><span style="color: #0563c1"> 7.1</span></u></a>, cuya arquitectura era la siguiente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000050F0000012365A8B684.png" width="648" height="146" style="display:inline-block; margin:4px;width:17.133cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/100000000000050F0000012365A8B684.png" /></td></tr></table>
 
-<p>Las capas [de lógica de negocio y DAO] se ejecutaban en el contenedor EJB3 del servidor GlassFish, y la capa [UI] se ejecutaba en una aplicación de consola o Swing en otra máquina:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E1000000BCC0FA4112.png" width="625" height="94" style="display:inline-block; margin:4px;width:16.524cm;height:2.487cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E1000000BCC0FA4112.png" /></td></tr></table>
+<p>Las capas [metier, DAO] se ejecutaban en el contenedor EJB3 del servidor Glassfish y la capa [ui] en una aplicación de consola o Swing en otra máquina:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004E1000000BCC0FA4112.png" width="625" height="94" style="display:inline-block; margin:4px;width:16.524cm;height:2.487cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E1000000BCC0FA4112.png" /></td></tr></table>
 
 <p>En la arquitectura de la nueva aplicación:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004DD000000AE898F8953.png" width="623" height="87" style="display:inline-block; margin:4px;width:16.471cm;height:2.302cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DD000000AE898F8953.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004DD000000AE898F8953.png" width="623" height="87" style="display:inline-block; margin:4px;width:16.471cm;height:2.302cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DD000000AE898F8953.png" /></td></tr></table>
 
-<p>solo es necesario escribir la capa [web / jsf]. Las demás capas [business, DAO, JPA] ya están implementadas.</p>
-<p>En el documento [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/"><u><span style="color: #0563c1">ref3</span></u></a>] se muestra que una aplicación web en la que la capa web se implementa con Java Server Faces tiene una arquitectura similar a la siguiente:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046300000167CE12FF28.png" width="562" height="179" style="display:inline-block; margin:4px;width:14.857cm;height:4.748cm;" class="odt-zoomable" data-zoom-src="images/100000000000046300000167CE12FF28.png" /></td></tr></table>
+<p>solo hay que escribir la capa [web / jsf]. Las demás capas [metier, DAO, jpa] ya están implementadas.</p>
+<p>En el documento [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/">ref3</a>], se muestra que una aplicación web en la que la capa web se implementa con Java Server Faces tiene una arquitectura similar a la siguiente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000046300000167CE12FF28.png" width="562" height="179" style="display:inline-block; margin:4px;width:14.857cm;height:4.748cm;" class="odt-zoomable" data-zoom-src="images/100000000000046300000167CE12FF28.png" /></td></tr></table>
 
-<p>Esta arquitectura implementa el <em>patrón de diseño</em> <strong>MVC</strong> (Modelo, Vista, Controlador). El procesamiento de una solicitud del cliente se lleva a cabo de la siguiente manera:</p>
-<p>Si la solicitud se realiza mediante un <strong>GET</strong>, se ejecutan los dos pasos siguientes:</p>
-<ol>
-  <li><b>solicitud</b>: el navegador del cliente envía una solicitud al controlador [<b>Faces Servlet</b>]. El controlador gestiona todas las solicitudes del cliente. Es el punto de entrada de la aplicación. Es la <b>C </b>de MVC.
+<p>Esta arquitectura implementa el <em>patrón de diseño</em> <strong>MVC</strong> (Modelo, Vista, Controlador). El procesamiento de una solicitud de un cliente se lleva a cabo de la siguiente manera:</p>
+<p>Si la solicitud se realiza con un <strong>GET</strong>, se ejecutan los dos pasos siguientes:</p>
+<ul>
+  <li><b>solicitud</b>: el navegador del cliente envía una solicitud al controlador [Faces Servlet]. Este recibe todas las solicitudes de los clients. Es la puerta de entrada de la aplicación. Es la <b>C </b>de MVC.
   </li>
-  <li><b>respuesta</b>: el controlador <b>C </b>indica a la página JSF seleccionada que se renderice. Esta es la vista, la <b>V </b>de MVC. La página JSF utiliza un modelo <b>M </b>para inicializar las partes dinámicas de la respuesta que debe enviar al cliente. Este modelo es una clase Java que puede recurrir a la capa [de negocio] [4a] para proporcionar a la vista <b>V </b>los datos que necesita.
+  <li><b>respuesta</b>: el controlador <b>C </b>solicita que se muestre la página JSF seleccionada. Es la vista, la <b>V </b>de MVC. La página JSF utiliza una plantilla <b>M </b>para inicializar las partes dinámicas de la respuesta que debe enviar al cliente. Esta plantilla es una clase Java que puede recurrir a la capa [métier] [4a] para proporcionar a la vista <b>V </b>los datos que necesita.
   </li>
-</ol>
+</ul>
 
-<p>Si la solicitud se realiza mediante un <strong>POST</strong>, se producen dos pasos adicionales entre la solicitud y la respuesta:</p>
-<ol>
-  <li><b>solicitud</b>: el cliente del navegador realiza una solicitud al controlador [<b>Faces Servlet</b>].
+<p>Si la solicitud se realiza con un <strong>POST</strong>, se insertan dos pasos adicionales entre la solicitud y la respuesta:</p>
+<ul>
+  <li><b>solicitud</b>: el navegador del cliente realiza una solicitud al controlador [Faces Servlet].
   </li>
-  <li><b>procesamiento</b>: el controlador <b>C </b>procesa esta solicitud. De hecho, una solicitud POST va acompañada de datos que deben procesarse. Para ello, el controlador cuenta con la ayuda de controladores de eventos específicos de la aplicación [2a]. Estos controladores pueden requerir la capa de negocio [2b]. Es posible que el controlador de eventos tenga que actualizar ciertos modelos M [2c]. Una vez procesada la solicitud del cliente, esta puede desencadenar diversas respuestas. Un ejemplo clásico es:
+  <li><b>procesamiento</b>: el controlador <b>C </b>procesa esta solicitud. De hecho, una solicitud POST va acompañada de datos que deben procesarse. Para ello, el controlador cuenta con la ayuda de gestores de eventos específicos de la aplicación escrita [2a]. Estos gestores pueden necesitar la capa de negocio [2b]. El gestor del evento puede verse obligado a actualizar ciertos modelos M [2c]. Una vez procesada la solicitud del cliente, esta puede generar diversas respuestas. Un ejemplo clásico es:
     <ul>
-      <li>una página de error si la solicitud no se ha podido procesar correctamente
+      <li>una página de errores si la solicitud no se ha podido procesar correctamente
       </li>
       <li>una página de confirmación en caso contrario
       </li>
     </ul>
   </li>
-</ol>
+</ul>
 
-<p>El gestor de eventos devuelve al controlador [Faces Servlet] un resultado de tipo cadena denominado <strong>clave de navegación</strong>.</p>
-<ol>
-  <li><b>navegación</b>: el controlador selecciona la página JSF (= vista) que se enviará al cliente. Esta selección se basa en la clave de navegación devuelta por el gestor de eventos.
-  </li>
-  <li><b>respuesta</b>: la página JSF seleccionada envía la respuesta al cliente. Utiliza su modelo <b>M </b>para inicializar sus partes dinámicas. Este modelo también puede recurrir a la capa [de negocio] [4a] para proporcionar a la página JSF los datos que necesita.
-  </li>
-</ol>
-
-<p>En un proyecto JSF:</p>
+<p>El gestor de eventos devuelve al controlador [Faces Servlet] un resultado de tipo cadena de caracteres denominado <strong>clave de navigation</strong>.</p>
 <ul>
-  <li>el controlador <b>C </b>es el servlet [javax.faces.webapp.FacesServlet]. Se encuentra en la biblioteca [jsf-api.jar].
+  <li><b>navigation</b>: el controlador selecciona la página JSF (= vista) que se enviará al cliente. Esta selección se realiza a partir de la clave de navigation devuelta por el gestor de eventos.
   </li>
-  <li>Las vistas <b>V </b>se implementan mediante páginas JSF.
-  </li>
-  <li>Los modelos <b>M </b>y <b>los controladores de eventos </b>se implementan mediante clases Java a menudo denominadas «backing beans».
-  </li>
-  <li>En las versiones 1.x de JSF, las definiciones de beans y las <b>reglas para navegar </b>de una página a otra se definen en el archivo [faces-config.xml]. Este contiene la lista de vistas y las reglas para la transición de una a otra. A partir de la versión 2 de JSF, las definiciones de beans se pueden realizar mediante anotaciones, y las transiciones entre páginas se pueden codificar directamente en el código del bean.
+  <li><b>respuesta</b>: la página JSF seleccionada enviará la respuesta al cliente. Utiliza su modelo <b>M </b>para inicializar sus partes dinámicas. Esta plantilla también puede recurrir a la capa [métier] [4a] para proporcionar a la página JSF los datos que necesita.
   </li>
 </ul>
 
-<p><a id="refheading87545112820228"></a></p>
-<h2 id="102-como-funciona-la-aplicacion">10.2. <span style="color: #4f81bd">Cómo funciona la aplicación</span></h2>
-<p>Cuando se solicita la aplicación por primera vez, aparece la siguiente página:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004440000019A7707A90B.png" width="546" height="205" style="display:inline-block; margin:4px;width:14.446cm;height:5.424cm;" class="odt-zoomable" data-zoom-src="images/10000000000004440000019A7707A90B.png" /></td></tr></table>
+<p>En un proyecto JSF:</p>
+<ol>
+  <li>el controlador <b>C </b>es el servlet [javax.faces.webapp.FacesServlet]. Este se encuentra en la biblioteca [jsf-api.jar].
+  </li>
+  <li>Las vistas <b>V </b>se implementan mediante páginas JSF.
+  </li>
+  <li>Los modelos <b>M </b>y los <b>gestores de eventos </b>se implementan mediante clases Java, a menudo denominadas «backing beans».
+  </li>
+  <li>En version JSF 1.x, la definición de los beans, así como las <b>reglas de navigation </b>de una página a otra, se definen en el archivo [faces-config.xml]. En él se encuentra la lista de vistas y las reglas de transición de una a otra. A partir de la versión 2, las definiciones de los beans pueden realizarse mediante anotaciones y las transiciones entre páginas pueden hacerse de forma «dura» en el código de los beans.
+  </li>
+</ol>
 
-<p>A continuación, rellena el formulario y solicita el salario:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000416000000E0656D40DC.png" width="523" height="112" style="display:inline-block; margin:4px;width:13.838cm;height:2.963cm;" class="odt-zoomable" data-zoom-src="images/1000000000000416000000E0656D40DC.png" /></td></tr></table>
+<p><span id="refheading87545112820228" name="refheading87545112820228" class="odt-bookmark-anchor"></span></p>
+<h2 id="102-funcionamiento-de-la-aplicacion">10.2. <span style="color: #4f81bd">Funcionamiento de la aplicación</span></h2>
+<p>Cuando se accede a la aplicación por primera vez, aparece la siguiente página:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004440000019A7707A90B.png" width="546" height="205" style="display:inline-block; margin:4px;width:14.446cm;height:5.424cm;" class="odt-zoomable" data-zoom-src="images/10000000000004440000019A7707A90B.png" /></td></tr></table>
 
-<p>Se muestra el siguiente resultado:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000408000003ADBE48828A.png" width="516" height="471" style="display:inline-block; margin:4px;width:13.653cm;height:12.45cm;" class="odt-zoomable" data-zoom-src="images/1000000000000408000003ADBE48828A.png" /></td></tr></table>
+<p>A continuación, se rellena el formulario y se solicita el salario:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000416000000E0656D40DC.png" width="523" height="112" style="display:inline-block; margin:4px;width:13.838cm;height:2.963cm;" class="odt-zoomable" data-zoom-src="images/1000000000000416000000E0656D40DC.png" /></td></tr></table>
 
-<p>Esta versión calcula un salario ficticio. No prestes atención al contenido de la página, sino a su diseño. Al hacer clic en el botón [Restablecer], volverás a la página [A].</p>
-<p>Las entradas incorrectas se marcan, como se muestra en el siguiente ejemplo:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000446000000F985EF9422.png" width="547" height="124" style="display:inline-block; margin:4px;width:14.473cm;height:3.293cm;" class="odt-zoomable" data-zoom-src="images/1000000000000446000000F985EF9422.png" /></td></tr></table>
+<p>Se obtiene el siguiente resultado:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000408000003ADBE48828A.png" width="516" height="471" style="display:inline-block; margin:4px;width:13.653cm;height:12.45cm;" class="odt-zoomable" data-zoom-src="images/1000000000000408000003ADBE48828A.png" /></td></tr></table>
 
-<p><a id="refheading87547112820228"></a></p>
-<h2 id="103-el-proyecto-netbeans">10.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">El proyecto NetBeans</span></strong></span></h2>
-<p>Crearemos una versión inicial de la aplicación en la que se simulará la capa [de negocio]. Contaremos con la siguiente arquitectura:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003DD00000163BE3540CD.png" width="495" height="178" style="display:inline-block; margin:4px;width:13.085cm;height:4.697cm;" class="odt-zoomable" data-zoom-src="images/10000000000003DD00000163BE3540CD.png" /></td></tr></table>
+<p>Este version calcula un salario ficticio. No hay que prestar atención al contenido de la página, sino a su formato. Al utilizar el botón [Raz], se vuelve a la página [A].</p>
+<p>Las entradas erróneas se señalan, como se muestra en el siguiente ejemplo:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000446000000F985EF9422.png" width="547" height="124" style="display:inline-block; margin:4px;width:14.473cm;height:3.293cm;" class="odt-zoomable" data-zoom-src="images/1000000000000446000000F985EF9422.png" /></td></tr></table>
 
-<p>Cuando los controladores de eventos o los modelos soliciten datos a la capa [de negocio] [2b, 4a], esta les proporcionará datos ficticios. El objetivo es obtener una capa web que responda correctamente a las solicitudes de los usuarios. Una vez logrado esto, solo quedará instalar la capa de servidor desarrollada en la sección<a href="#serveur-ejb-sunas9"><u><span style="color: #0563c1"> 7.1</span></u></a>:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047500000166CB22B6C6.png" width="571" height="179" style="display:inline-block; margin:4px;width:15.095cm;height:4.736cm;" class="odt-zoomable" data-zoom-src="images/100000000000047500000166CB22B6C6.png" /></td></tr></table>
+<p><span id="refheading87547112820228" name="refheading87547112820228" class="odt-bookmark-anchor"></span></p>
+<h2 id="103-el-proyecto-netbeans">10.3. <span style="color: #4f81bd">El proyecto Netbeans</span></h2>
+<p>Vamos a construir una primera version de la aplicación en la que se simulará la capa [métier]. Tendremos la siguiente arquitectura:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003DD00000163BE3540CD.png" width="495" height="178" style="display:inline-block; margin:4px;width:13.085cm;height:4.697cm;" class="odt-zoomable" data-zoom-src="images/10000000000003DD00000163BE3540CD.png" /></td></tr></table>
 
-<p>Esta será la versión 2 de la versión web de nuestra aplicación PAM.</p>
-<p>El proyecto NetBeans para la versión 1 es el siguiente proyecto Maven:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004EA00000268048BD977.png" width="629" height="308" style="display:inline-block; margin:4px;width:16.642cm;height:8.149cm;" class="odt-zoomable" data-zoom-src="images/10000000000004EA00000268048BD977.png" /></td></tr></table>
+<p>Cuando los gestores de eventos o los modelos soliciten datos a la capa [métier] [2b, 4a], esta les proporcionará datos ficticios. El objetivo es conseguir una capa web que responda correctamente a las solicitudes del usuario. Cuando se haya logrado esto, solo nos quedará instalar la capa de servidor desarrollada en el apartado<a href="version-3-portabilidad-de-la-aplicacion-pam-a-un-servidor-de-aplicaciones-glassfish.html#serveur-ejb-sunas9"><u><span style="color: #0563c1"> 7.1</span></u></a>:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000047500000166CB22B6C6.png" width="571" height="179" style="display:inline-block; margin:4px;width:15.095cm;height:4.736cm;" class="odt-zoomable" data-zoom-src="images/100000000000047500000166CB22B6C6.png" /></td></tr></table>
+
+<p>Será la version 2 de la version web de nuestra aplicación PAM.</p>
+<p>El proyecto Netbeans de la version 1 es el siguiente proyecto Maven:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004EA00000268048BD977.png" width="629" height="308" style="display:inline-block; margin:4px;width:16.642cm;height:8.149cm;" class="odt-zoomable" data-zoom-src="images/10000000000004EA00000268048BD977.png" /></td></tr></table>
 
 <ul>
   <li>en [1], los archivos de configuración
@@ -1000,7 +1002,7 @@
   </li>
   <li>en [3], las clases de la capa [web]
   </li>
-  <li>en [4], los objetos intercambiados entre la capa [web] y la capa [de negocio], y la propia capa [de negocio]
+  <li>en [4], los objetos intercambiados entre la capa [web] y la capa [métier] y la propia capa [métier]
   </li>
   <li>en [5], el archivo de mensajes para la internacionalización de la aplicación
   </li>
@@ -1008,50 +1010,10 @@
   </li>
 </ul>
 
-<p>Repasaremos algunos de estos elementos.</p>
-<p><a id="refheading87549112820228"></a></p>
-<h3 id="1031-archivos-de-configuracion">10.3.1. <span style="color: #4f81bd">Archivos de configuración</span></h3>
-<p>El archivo [web.xml] es el que genera NetBeans de forma predeterminada, junto con la configuración de una página de excepción:</p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;beans</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">xmlns</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.springframework.org/schema/beans</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">xmlns:xsi</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.w3.org/2001/XMLSchema-instance</span><span style="color:#800080">&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#808000">xmlns:tx</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.springframework.org/schema/tx</span><span style="color:#800080">&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#808000">xmlns:jaxws</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://cxf.apache.org/jaxws</span><span style="color:#800080">&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#808000">xsi:schemaLocation</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">http://www.springframework.org/schema/beans </span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#0000ff">http://www.springframework.org/schema/beans/spring-beans-2.0.xsd </span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#0000ff">http://www.springframework.org/schema/tx </span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#0000ff">http://www.springframework.org/schema/tx/spring-tx-2.0.xsd</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#0000ff">http://cxf.apache.org/jaxws</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#0000ff">http://cxf.apache.org/schemas/jaxws.xsd</span><span style="color:#800080">&quot;&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- Apache CXF --&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;import</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">resource</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">classpath:META-INF/cxf/cxf.xml</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;import</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">resource</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">classpath:META-INF/cxf/cxf-extension-soap.xml</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;import</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">resource</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">classpath:META-INF/cxf/cxf-servlet.xml</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span><span style="color:#000000">  </span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- lower layers --&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;import</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">resource</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">classpath:spring-config-metier-dao.xml</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span><span style="color:#000000">  </span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- web service --&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">wsMetier</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">pam.ws.PamWsMetier</span><span style="color:#800080">&quot;&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;property</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">name</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">metier</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">ref</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">metier</span><span style="color:#800080">&quot;/&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/bean&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;jaxws:endpoint</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">wsmetier</span><span style="color:#800080">&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">                  </span><span style="color:#808000">implementor</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">#wsMetier</span><span style="color:#800080">&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">                  </span><span style="color:#808000">address</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">/metier</span><span style="color:#800080">&quot;&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/jaxws:endpoint&gt;</span><span style="color:#000000">  </span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">&lt;/beans&gt;</span></span>
-</code></pre></div>
-
-<ul>
-  <li>línea 30: [index.html] es la página de inicio de la aplicación
-  </li>
-  <li>líneas 32-39: configuración de la página de excepción
-  </li>
-</ul>
-
-<p>La página [exception.html] se ha tomado de [<strong>ref3</strong>]. Su código es el siguiente:</p>
+<p>Repasamos algunos de estos elementos.</p>
+<p><span id="refheading87549112820228" name="refheading87549112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1031-los-archivos-de-configuracion">10.3.1. <span style="color: #4f81bd">Los archivos de configuración</span></h3>
+<p>El archivo [web.xml] es el generado por defecto por Netbeans, con la configuración adicional de una página de excepciones:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1132,10 +1094,14 @@
 <a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">  </span><span class="nt">&lt;/error-page&gt;</span>
 <a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="nt">&lt;/web-app&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>Cualquier excepción que no sea gestionada explícitamente por el código de la aplicación web provocará que se muestre una página similar a la siguiente:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000557000000CB293CCEBE.png" width="752" height="112" style="display:inline-block; margin:4px;width:19.89cm;height:2.955cm;" class="odt-zoomable" data-zoom-src="images/1000000000000557000000CB293CCEBE.png" /></td></tr></table>
+<ul>
+  <li>línea 30: [index.html] es la página de inicio de la aplicación
+  </li>
+  <li>líneas 32-39: configuración de la página de excepción
+  </li>
+</ul>
 
-<p>El archivo [faces-config.xml] tendrá el siguiente contenido:</p>
+<p>La página [exception.html] se deriva de [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/">ref3</a>]. Su código es el siguiente:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
@@ -1192,17 +1158,10 @@
 <a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">  </span><span class="nt">&lt;/f:view&gt;</span>
 <a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="nt">&lt;/html&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>Ten en cuenta los siguientes puntos:</p>
-<ul>
-  <li>Líneas 9–14: El archivo [messages.properties] se utilizará para la internacionalización de la página. Se podrá acceder a él en las páginas XHTML a través de la clave <b>msg</b>.
-  </li>
-  <li>Línea 15: define el archivo [messages.properties] como la fuente prioritaria para los mensajes de error mostrados por las etiquetas &lt;h:messages&gt; y &lt;h:message&gt;. Esto permite anular ciertos mensajes de error predeterminados de JSF. Esta función no se utiliza aquí.
-  </li>
-</ul>
+<p>Cualquier excepción que no sea gestionada explícitamente por el código de la aplicación web provocará que se muestre una página similar a la siguiente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000557000000CB293CCEBE.png" width="752" height="112" style="display:inline-block; margin:4px;width:19.89cm;height:2.955cm;" class="odt-zoomable" data-zoom-src="images/1000000000000557000000CB293CCEBE.png" /></td></tr></table>
 
-<p><a id="refheading87551112820228"></a></p>
-<h3 id="1032-la-hoja-de-estilo">10.3.2. <span style="color: #4f81bd">La hoja de estilo</span></h3>
-<p>El archivo [styles.css] es el siguiente:</p>
+<p>El archivo [faces-config.xml] será el siguiente:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -1237,49 +1196,56 @@
 <a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">  </span><span class="nt">&lt;/application&gt;</span>
 <a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="nt">&lt;/faces-config&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>A continuación se muestran algunos ejemplos de código JSF que utilizan estos estilos:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputText </span><span style="color:#000000">value=</span><span style="color:#008080">&quot;#{msg[&#x27;form.infos.employee&#x27;]}&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000"> styleClass=</span><span style="color:#2a00ff">&quot;titleInfo&quot;</span><span style="color:#008080">/&gt;</span></span></span>
-</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008E0000002277E3BCDE.png" width="99" height="24" style="display:inline-block; margin:4px;width:2.63cm;height:0.63cm;" class="odt-zoomable" data-zoom-src="images/100000000000008E0000002277E3BCDE.png" /></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:panelGrid </span><span style="color:#000000">columns=</span><span style="color:#2a00ff">&quot;3&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">rowClasses=</span><span style="color:#2a00ff">&quot;label,info&quot;</span><span style="color:#008080">&gt;</span></span></span>
-</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000E000000033B35F7138.png" width="157" height="36" style="display:inline-block; margin:4px;width:4.15cm;height:0.945cm;" class="odt-zoomable" data-zoom-src="images/10000000000000E000000033B35F7138.png" /></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:message </span><span style="color:#000000">for=</span><span style="color:#2a00ff">&quot;hoursWorked&quot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#2a00ff"> </span><span style="color:#000000">styleClass=</span><span style="color:#2a00ff">&quot;error&quot;</span><span style="color:#008080">/&gt;</span></span></span>
-</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000EC0000004B6A0B1910.png" width="165" height="52" style="display:inline-block; margin:4px;width:4.369cm;height:1.388cm;" class="odt-zoomable" data-zoom-src="images/10000000000000EC0000004B6A0B1910.png" /></td></tr></table>
+<p>Cabe destacar los siguientes puntos:</p>
+<ul>
+  <li>líneas 9-14: el archivo [messages.properties] se utilizará para la internacionalización de las páginas. Se podrá acceder a él en las páginas XHTML mediante la clave <b>msg</b>.
+  </li>
+  <li>línea 15: define el archivo [messages.properties] como el que debe explorarse con prioridad para los mensajes de error mostrados por las etiquetas &lt;h:messages&gt; y &lt;h:message&gt;. Esto permite redefinir algunos mensajes de error predeterminados de JSF. Esta posibilidad no se utiliza aquí.
+  </li>
+</ul>
 
-<p><a id="refheading87553112820228"></a></p>
-<h3 id="1033-el-archivo-de-mensajes">10.3.3. <span style="color: #4f81bd">El archivo de mensajes</span></h3>
-<p>El archivo de mensajes [messages_fr.properties] es el siguiente:</p>
+<p><span id="refheading87551112820228" name="refheading87551112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1032-la-hoja-de-estilo">10.3.2. <span style="color: #4f81bd">La hoja de estilo</span></h3>
+<p>El archivo [styles.css] es el siguiente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#3f7f7f">.libelle</span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">background-color</span><span style="color:#000000">: </span><span style="color:#2a00e1">#ccffff</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   background-color: #ccffffff;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">font-family</span><span style="color:#000000">: </span><span style="color:#2a00e1">&#x27;Times New Roman&#x27;,Times,serif</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">font-size</span><span style="color:#000000">: </span><span style="color:#2a00e1">14px</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">font-weight</span><span style="color:#000000">: </span><span style="color:#2a00e1">bold</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#3f7f7f">body</span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">background-color</span><span style="color:#000000">: </span><span style="color:#2a00e1">#ffccff</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   background-color: #ffccff</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#3f7f7f">.error</span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">color</span><span style="color:#000000">: </span><span style="color:#2a00e1">#ff3333</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   color: #ff3333</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#3f7f7f">.info</span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">background-color</span><span style="color:#000000">: </span><span style="color:#2a00e1">#99cc00</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   background-color: #99cc00</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#3f7f7f">.titreInfos</span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">   </span><span style="color:#7f007f">background-color</span><span style="color:#000000">: </span><span style="color:#2a00e1">#ffcc00</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   background-color: #ffcc00</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Todos estos mensajes se utilizan en la página [index.xhtml], excepto los de las líneas 11–15, que se utilizan en la página [exception.xhtml].</p>
-<p><a id="refheading217526813040411"></a></p>
-<h3 id="1034-el-ambito-de-los-beans">10.3.4. <span style="color: #4f81bd">El ámbito de los beans</span></h3>
-<p>El bean [web.forms.Form] tendrá un ámbito <strong>de solicitud</strong>:</p>
+<p>Estos son algunos ejemplos de código JSF que utilizan estos estilos:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputText </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="color:#008080">&quot;#{msg[&#x27;form.infos.employé&#x27;]}&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000"> </span><span style="color:#7f007f">styleClass</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;titreInfos&quot;</span><span style="color:#008080">/&gt;</span></span></span>
+</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000008E0000002277E3BCDE.png" width="99" height="24" style="display:inline-block; margin:4px;width:2.63cm;height:0.63cm;" class="odt-zoomable" data-zoom-src="images/100000000000008E0000002277E3BCDE.png" /></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:panelGrid </span><span style="color:#7f007f">columns</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;3&quot; </span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#7f007f">rowClasses</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;libelle,info&quot;</span><span style="color:#008080">&gt;</span></span></span>
+</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000E000000033B35F7138.png" width="157" height="36" style="display:inline-block; margin:4px;width:4.15cm;height:0.945cm;" class="odt-zoomable" data-zoom-src="images/10000000000000E000000033B35F7138.png" /></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:message </span><span style="color:#7f007f">for</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;heuresTravaillées&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#2a00ff"> </span><span style="color:#7f007f">styleClass</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;error&quot;</span><span style="color:#008080">/&gt;</span></span></span>
+</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000EC0000004B6A0B1910.png" width="165" height="52" style="display:inline-block; margin:4px;width:4.369cm;height:1.388cm;" class="odt-zoomable" data-zoom-src="images/10000000000000EC0000004B6A0B1910.png" /></td></tr></table>
+
+<p><span id="refheading87553112820228" name="refheading87553112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1033-el-archivo-de-mensajes">10.3.3. <span style="color: #4f81bd">El archivo de mensajes</span></h3>
+<p>El archivo de mensajes [messages_fr.properties] es el siguiente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">form.titre=</span><span style="color:#2a00ff">Feuille</span><span style="color:#000000"> </span><span style="color:#2a00ff">de</span><span style="color:#000000"> </span><span style="color:#2a00ff">salaire</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">form.comboEmployes.libell\u00e9=</span><span style="color:#2a00ff">Employ\u00e9</span></span></span>
@@ -1321,7 +1287,10 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">form.salaire.net=</span><span style="color:#2a00ff">Salaire</span><span style="color:#000000"> </span><span style="color:#2a00ff">net</span></span></span>
 </code></pre></div>
 
-<p>El bean [web.utils.ChangeLocale] tendrá ámbito <strong>de aplicación</strong>:</p>
+<p>Todos estos mensajes se utilizan en la página [index.xhtml], a excepción de los de las líneas 11-15, que se utilizan en la página [exception.xhtml].</p>
+<p><span id="refheading217526813040411" name="refheading217526813040411" class="odt-bookmark-anchor"></span></p>
+<h3 id="1034-el-ambito-de-los-beans">10.3.4. <span style="color: #4f81bd">El ámbito de los beans</span></h3>
+<p>El bean [web.forms.Form] tendrá un alcance <strong>de solicitud</strong>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.io.Serializable;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> javax.faces.bean.ManagedBean;</span></span></span>
@@ -1332,9 +1301,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Form </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> Serializable {</span></span></span>
 </code></pre></div>
 
-<p><a id="refheading87555112820228"></a></p>
-<h3 id="1035-la-capa-de-negocio">10.3.5. <span style="color: #4f81bd">La capa [de negocio]</span></h3>
-<p>La capa [de negocio] implementa la siguiente interfaz <em>IMetierLocal</em>:</p>
+<p>El bean [web.utils.ChangeLocale] tendrá un ámbito <strong>de aplicación</strong>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> web.utils;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1345,7 +1312,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">ManagedBean</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">SessionScoped</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> ChangeLocale </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> Serializable{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// page locale</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// páginas locales</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> String locale=</span><span style="color:#2a00ff">&quot;fr&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> ChangeLocale() {</span></span></span>
@@ -1373,8 +1340,9 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Esta interfaz es la que se utiliza en el lado del servidor de la aplicación cliente/servidor descrita en la sección<a href="#serveur-ejb-sunas9"><u><span style="color: #0563c1"> 7.1</span></u></a>.</p>
-<p>La clase <em>Business</em> que utilizaremos para probar la capa [web] implementa esta interfaz de la siguiente manera:</p>
+<p><span id="refheading87555112820228" name="refheading87555112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1035-la-capa-metier">10.3.5. <span style="color: #4f81bd">La capa [métier]</span></h3>
+<p>La capa [métier] implementa la siguiente interfaz <em>IMetierLocal</em>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> metier;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1384,174 +1352,180 @@
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">Local</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">interface</span><span style="color:#000000"> IMetierLocal {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// get your payslip</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// obtenga su nómina</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  FeuilleSalaire calculerFeuilleSalaire(String SS, </span><span style="font-weight:bold;color:#7f0055">double</span><span style="color:#000000"> nbHeuresTravaillées, </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> nbJoursTravaillés );</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// list of employees</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// lista de empleados</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  List&lt;Employe&gt; findAllEmployes();</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Dejamos que sea el lector quien descifre este código. Fíjate en el método utilizado: para evitar tener que implementar la parte EJB de la aplicación, simulamos la capa [de negocio]. Una vez que se haya verificado que la capa [web] es correcta, podremos sustituirla por la capa [de negocio] real.</p>
-<p><a id="refheading87557112820228"></a></p>
-<h2 id="104-el-formulario-indexxhtml-y-su-plantilla-formjava">10.4. <span style="color: #4f81bd">El formulario [index.xhtml] y su plantilla [Form.java]</span></h2>
-<p>Ahora crearemos la página XHTML del formulario y su modelo.</p>
-<p><strong>Lectura recomendada</strong> en [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/"><u><span style="color: #0563c1">ref3</span></u></a>]: </p>
-<ul>
-  <li>Ejemplo #3 (mv-jsf2-03) para ver la lista de etiquetas que se pueden utilizar en un formulario
-  </li>
-  <li>Ejemplo n.º 4 (mv-jsf2-04) para ver las listas desplegables rellenadas por el modelo
-  </li>
-  <li>Ejemplo n.º 6 (mv-jsf2-06) para la validación de entradas
-  </li>
-  <li>Ejemplo n.º 7 (mv-jsf2-07) para gestionar el botón [Borrar]
-  </li>
-</ul>
-<p><a id="refheading87559112820228"></a></p>
-<h3 id="1041-paso-1">10.4.1. <span style="color: #4f81bd">Paso 1</span></h3>
-<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<p><strong>Pregunta</strong>: Crea el formulario [index.xhtml] y su modelo [Form.java] necesarios para mostrar la siguiente página:</p>
-<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000036F0000016EAB481B12.png" width="440" height="183" style="display:inline-block; margin:4px;width:11.629cm;height:4.842cm;" class="odt-zoomable" data-zoom-src="images/100000000000036F0000016EAB481B12.png" /></td></tr></table>
-
-<p>Los componentes de entrada son los siguientes:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>N.º
-</code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>id</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Tipo JSF</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>modelo</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>rol</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>1
-</code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">comboEmpleados</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">&lt;h:selectOneMenu&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">String comboEmployeesValue</div><div style="margin:0 0 0.5em 0">List&lt;Employee&gt; getEmployees()</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">contiene la lista de empleados en el formato</div><div style="margin:0 0 0.5em 0"> &quot;nombre apellido&quot;.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>2
-</code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">horasTrabajadas</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">&lt;h:inputText&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Cadena horasTrabajadas</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">número de horas trabajadas - número real</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>3
-</code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">díasTrabajados</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">&lt;h:inputText&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Cadena díasTrabajados</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">número de días trabajados - entero</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>4
-</code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">btnSalario</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">&lt;h:commandButton&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">inicia el cálculo del salario</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>5
-</code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">btnReset</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">&lt;h:commandButton&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">restablece el formulario a su estado inicial</div></td></tr></table>
-
-<ul>
-  <li>El método <i>getEmployees </i>devolverá una lista de empleados recuperados de la capa [business]. Los objetos mostrados por el cuadro combinado tendrán el atributo <b>itemValue </b>establecido en el número de la seguridad social del empleado y el atributo <b>itemLabel </b>establecido en una cadena que contiene el nombre y los apellidos del empleado.
-  </li>
-  <li>Los botones [Salario] y [Borrar] no estarán vinculados a controladores de eventos por el momento.
-  </li>
-  <li>Se comprobará la validez de los datos introducidos.
-  </li>
-</ul>
-
-<p><img src="images/1000000000000284000000AF4366AC4B.png" width="451" height="123" style="width:11.929cm;height:3.242cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000284000000AF4366AC4B.png" /></p>
-<p>Prueba esta versión. En particular, comprueba que los errores de entrada se señalen correctamente.</p>
-<p><strong>Nota</strong>: Es importante que los atributos <strong>ID</strong> de los componentes de la página <strong>no contengan caracteres acentuados</strong>. Con Glassfish 3.1.2, esto provoca que la aplicación se bloquee.</p>
-<p><a id="refheading87561112820228"></a></p>
-<h3 id="1042-paso-2">10.4.2. <span style="color: #4f81bd">Paso 2</span></h3>
-<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<p><strong>Pregunta</strong>: Complete el formulario [index.xhtml] y su plantilla [Form.java] para que se muestre la siguiente página una vez que se haya pulsado el botón [Salary]:</p>
-<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000387000001AB7EEDEDA2.png" width="452" height="214" style="display:inline-block; margin:4px;width:11.947cm;height:5.65cm;" class="odt-zoomable" data-zoom-src="images/1000000000000387000001AB7EEDEDA2.png" /></td></tr></table>
-
-<p>El botón [Salario] se conectará al controlador de eventos <em>calculateSalary</em> del modelo. Este método utilizará el método <em>calculatePaystub</em> de la capa [business]. Esta nómina se generará para el empleado seleccionado en [1].</p>
-<p>En el modelo, la nómina estará representada por el siguiente campo privado:</p>
+<p>Esta interfaz es la que se utiliza en la parte del servidor de la aplicación cliente/servidor descrita en el apartado<a href="version-3-portabilidad-de-la-aplicacion-pam-a-un-servidor-de-aplicaciones-glassfish.html#serveur-ejb-sunas9"><u><span style="color: #0563c1"> 7.1</span></u></a>.</p>
+<p>La clase <em>Metier</em> que vamos a utilizar para probar la capa [web] implementa esta interfaz de la siguiente manera:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> metier;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Metier </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> IMetierLocal {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// employee dictionary indexed by n° SS</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// diccionario del empleado indexado por n° SS</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Map&lt;String,Employe&gt; hashEmployes=</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> HashMap&lt;String,Employe&gt;();</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// list of employees </span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// lista de empleados </span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Employe&gt; listEmployes;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// get your payslip</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// obtenga su nómina</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> FeuilleSalaire calculerFeuilleSalaire(String SS,</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">double</span><span style="color:#000000"> nbHeuresTravaillées, </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> nbJoursTravaillés) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// we retrieve employee n° SS</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// recuperamos el empleado nº SS</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    Employe e=hashEmployes.get(SS);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// we make a fiictive payslip</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// confeccionamos una nómina certificada</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> FeuilleSalaire(e,</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Cotisation(3.49,6.15,9.39,7.88),</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ElementsSalaire(100,100,100,100,100));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// list of employees</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// lista de empleados</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> List&lt;Employe&gt; findAllEmployes() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">if</span><span style="color:#000000">(listEmployes==</span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">){</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// create a list of two employees</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// crear una lista de dos empleados</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      listEmployes=</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Employe&gt;();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      listEmployes.add(</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Employe(</span><span style="color:#2a00ff">&quot;254104940426058&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;Jouveinal&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;Marie&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;5 rue des oiseaux&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;St Corentin&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;49203&quot;</span><span style="color:#000000">,</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Indemnite(2,2.1,2.1,3.1,15)));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      listEmployes.add(</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Employe(</span><span style="color:#2a00ff">&quot;260124402111742&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;Laverti&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;Justine&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;La brûlerie&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;St Marcel&quot;</span><span style="color:#000000">,</span><span style="color:#2a00ff">&quot;49014&quot;</span><span style="color:#000000">,</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Indemnite(1,1.93,2,3,12)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// employee dictionary indexed by n° SS</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// diccionario del empleado indexado por n° SS</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="font-weight:bold;color:#7f0055">for</span><span style="color:#000000">(Employe e:listEmployes){</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        hashEmployes.put(e.getSS(),e);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// we return the list of employees</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// devolvemos la lista de empleados</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> listEmployes;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>que tiene métodos <em>get</em> y <em>set</em>.</p>
-<p>Para recuperar la información contenida en este objeto, puedes escribir expresiones como las siguientes en la página JSF:</p>
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-java">
+<p>Dejamos al lector la tarea de descifrar este código. Cabe destacar el método utilizado: para no tener que implementar la parte EJB de la aplicación, simulamos la capa [métier]. Cuando la capa [web] se declare correcta, podremos sustituirla por la verdadera capa [métier].</p>
+<p><span id="refheading87557112820228" name="refheading87557112820228" class="odt-bookmark-anchor"></span></p>
+<h2 id="104-el-formulario-indexxhtml-y-su-plantilla-formjava">10.4. <span style="color: #4f81bd">El formulario [index.xhtml] y su plantilla [Form.java]</span></h2>
+<p>Ahora creamos la página XHTML del formulario, así como su plantilla.</p>
+<p><strong>Lecturas recomendadas</strong> en [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/">ref3</a>]: </p>
+<ol>
+  <li>ejemplo n.º 3 (mv-jsf2-03) para la lista de etiquetas que se pueden utilizar en un formulario
+  </li>
+  <li>ejemplo n.º 4 (mv-jsf2-04) para las listas desplegables rellenadas por la plantilla
+  </li>
+  <li>ejemplo n.º 6 (mv-jsf2-06) para la validación de los datos introducidos
+  </li>
+  <li>ejemplo n.º 7 (mv-jsf2-07) para la gestión del botón [Raz]
+  </li>
+</ol>
+<p><span id="refheading87559112820228" name="refheading87559112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1041-paso-1">10.4.1. <span style="color: #4f81bd">paso 1</span></h3>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
+<p><strong>Pregunta</strong>: Cree el formulario [index.xhtml] y su modelo [Form.java] necesarios para obtener la página siguiente:</p>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000036F0000016EAB481B12.png" width="440" height="183" style="display:inline-block; margin:4px;width:11.629cm;height:4.842cm;" class="odt-zoomable" data-zoom-src="images/100000000000036F0000016EAB481B12.png" /></td></tr></table>
+
+<p>Los componentes de entrada son los siguientes:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>n°
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>id</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>tipo JSF</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>plantilla</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>función</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>1
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">comboEmployes</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">&lt;h:selectOneMenu&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">String comboEmployesValue</div><div style="margin:0 0 0.5em 0">List&lt;Empleado&gt; getEmployes()</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">contiene la lista de empleados en el formato</div><div style="margin:0 0 0.5em 0"> «nombre apellido».</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>2
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">heuresTravaillees</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">&lt;h:inputText&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">String heuresTravaillées</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">número de horas trabajadas - número real</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>3
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">joursTravailles</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">&lt;h:inputText&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">String joursTravaillés</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">número de días trabajados - número entero</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>4
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">btnSalaire</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">&lt;h:commandButton&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">inicia el cálculo del salario</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>5
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">btnRaz</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">&lt;h:commandButton&gt;</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">restablece el formulario a su estado inicial</div></td></tr></table>
+
+<ul>
+  <li>el método <i>getEmployes </i>devolverá una lista de empleados que obtendrá de la capa [métier]. Los objetos mostrados por el cuadro combinado tendrán como atributo <b>itemValue </b>el número SS del empleado y, como atributo <b>itemLabel</b>, una cadena formada por el nombre y los apellidos del empleado.
+  </li>
+  <li>Los botones [Salaire] y [Raz] no estarán conectados por el momento a ningún gestor de eventos.
+  </li>
+  <li>Se verificará la validez de los datos introducidos.
+  </li>
+</ul>
+
+<p><img src="images/1000000000000284000000AF4366AC4B.png" width="451" height="123" style="width:11.929cm;height:3.242cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000284000000AF4366AC4B.png" /></p>
+<p>Pruebe este version. Compruebe, en particular, que se señalan correctamente los errores de introducción de datos.</p>
+<p><strong>Nota</strong>: es importante que los atributos <strong>id</strong> de los componentes de la página <strong>no contengan caracteres acentuados</strong>. Con Glassfish 3.1.2, la aplicación se bloquea.</p>
+<p><span id="refheading87561112820228" name="refheading87561112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1042-paso-2">10.4.2. <span style="color: #4f81bd">Paso 2</span></h3>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
+<p><strong>Pregunta</strong>: rellene el formulario [index.xhtml] y su plantilla [Form.java] para obtener la página siguiente una vez que se haya pulsado el botón [Salaire]:</p>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000387000001AB7EEDEDA2.png" width="452" height="214" style="display:inline-block; margin:4px;width:11.947cm;height:5.65cm;" class="odt-zoomable" data-zoom-src="images/1000000000000387000001AB7EEDEDA2.png" /></td></tr></table>
+
+<p>El botón [Salaire] se conectará al gestor de eventos <em>calculerSalaire</em> de la plantilla. Este método utilizará el método <em>calculerFeuilleSalaire</em> de la capa [métier]. Esta nómina se generará para el empleado seleccionado en [1].</p>
+<p>En el modelo, la nómina estará representada por el siguiente campo privado:</p>
+<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> FeuilleSalaire feuilleSalaire;</span></span></span>
 </code></pre></div>
 
-<p>La expresión del atributo <strong>«value»</strong> se evaluará de la siguiente manera:</p>
-<p><em>[form].getPayrollSheet().getEmployee().getName()</em>, donde [form] representa una instancia de la clase [Form.java]. El lector puede comprobar que los métodos <em>get</em> utilizados aquí existen efectivamente en las clases [Form], [PayrollSheet] y [Employee], respectivamente. Si no fuera así, se lanzaría una excepción al evaluar la expresión.</p>
-<p>Pruebe esta nueva versión.</p>
-<p><a id="refheading87563112820228"></a></p>
-<h3 id="1043-paso-3">10.4.3. <span style="color: #4f81bd">Paso 3</span></h3>
-<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<p><strong>Pregunta</strong>: Complete el formulario [index.xhtml] y su plantilla [Form.java] para obtener la siguiente información adicional:</p>
-<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002D80000020845D4ACF3.png" width="364" height="260" style="display:inline-block; margin:4px;width:9.631cm;height:6.879cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D80000020845D4ACF3.png" /></td></tr></table>
-
-<p>Seguiremos el mismo enfoque que antes. Hay un problema con el símbolo de la moneda del euro que aparece en [1], por ejemplo. En una aplicación internacionalizada, sería preferible utilizar el formato de visualización y el símbolo de la moneda de la <em>configuración regional</em> seleccionada (en, de, fr, ...). Esto se puede lograr de la siguiente manera:</p>
+<p>que dispone de los métodos <em>get</em> y <em>set</em>.</p>
+<p>Para obtener la información contenida en este objeto, se pueden escribir en la página JSF expresiones como la siguiente:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputText </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span>&quot;#{form.feuilleSalaire.employe.nom}&quot;<span style="color:#008080">/&gt;</span></span></span>
 </code></pre></div>
 
-<p>Podríamos haber escrito:</p>
+<p>La expresión del atributo <strong>value</strong> se evaluará de la siguiente manera:</p>
+<p><em>[form].getFeuilleSalaire().getEmploye().getNom()</em> donde [form] representa una instancia de la clase [Form.java]. El lector podrá comprobar que los métodos <em>get</em> utilizados aquí existen efectivamente en las clases [Form], [FeuilleSalaire] y [Employe], respectivamente. Si no fuera así, se lanzaría una excepción al evaluar la expresión.</p>
+<p>Prueba este nuevo version.</p>
+<p><span id="refheading87563112820228" name="refheading87563112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1043-paso-3">10.4.3. <span style="color: #4f81bd">Paso 3</span></h3>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
+<p><strong>Pregunta</strong>: rellene el formulario [index.xhtml] y su plantilla [Form.java] para obtener la siguiente información adicional:</p>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002D80000020845D4ACF3.png" width="364" height="260" style="display:inline-block; margin:4px;width:9.631cm;height:6.879cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D80000020845D4ACF3.png" /></td></tr></table>
+
+<p>Seguiremos el mismo procedimiento que antes. Existe una dificultad con el símbolo monetario del euro que aparece en [1], por ejemplo. En el marco de una aplicación internacionalizada, sería preferible tener el formato de visualización y el símbolo monetario de la <em>configuración regional</em> utilizada (en, de, fr, ...). Esto se puede conseguir de la siguiente manera:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputFormat </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;{0,number,currency}&quot;</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">f:param </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span>&quot;#{form.feuilleSalaire.employe.indemnite.entretienJour}&quot;<span style="color:#008080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">h:outputFormat</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-<p>pero con la configuración regional <em>en_GB</em> (inglés británico), el importe seguiría mostrándose en euros cuando debería estar en libras (£). La etiqueta &lt;<strong>h:outputFormat</strong>&gt; permite mostrar la información en función de la <em>configuración regional</em> de la página JSF que se muestra:</p>
+<p>Se podría haber escrito:</p>
+<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputText </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;#{form.feuilleSalaire.employe.indemnite.entretienJour} </span><span style="color:#2a00ff">є</span><span style="color:#2a00ff">&quot;</span><span style="color:#008080">&gt;</span></span></span>
+</code></pre></div>
+
+<p>pero con la configuración regional <em>en_GB</em> (inglés GB) seguiríamos viendo el importe en euros, cuando lo que se debería utilizar es la libra £. La etiqueta &lt;<strong>h:outputFormat</strong>&gt; permite mostrar información en función de la <em>configuración regional</em> de la página JSF que se muestra:</p>
 <ul>
-  <li>línea 1: muestra el parámetro {0}, que es un número que representa una cantidad monetaria
+  <li>línea 1: muestra el parámetro {0}, que es un número (number) que representa una cantidad de dinero (currency)
   </li>
-  <li>línea 2: la etiqueta &lt;<b>f:param</b>&gt; asigna un valor al parámetro {0}. Una segunda etiqueta &lt;f:param&gt; asignaría un valor al parámetro denominado {1}, y así sucesivamente.
+  <li>línea 2: la etiqueta &lt;<b>f:param</b>&gt; asigna un valor al parámetro {0}. Una segunda etiqueta &lt;f:param&gt; asignaría un valor al parámetro {1} y así sucesivamente.
   </li>
 </ul>
 
-<p><a id="refheading87565112820228"></a></p>
-<h3 id="1044-paso-4">10.4.4. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">Paso 4</span></strong></span></h3>
-<p><strong>Lectura recomendada</strong>: Ejemplo n.º 7 (mv-jsf2-07) en [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/"><u><span style="color: #0563c1">ref3</span></u></a>].</p>
+<p><span id="refheading87565112820228" name="refheading87565112820228" class="odt-bookmark-anchor"></span></p>
+<h3 id="1044-paso-4">10.4.4. <span style="color: #4f81bd">paso 4</span></h3>
+<p><strong>Lecturas recomendadas</strong>: ejemplo n.º 7 (mv-jsf2-07) en [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/">ref3</a>].</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<p><strong>Pregunta</strong>: Completa el formulario [index.xhtml] y su plantilla [Form.java] para gestionar el botón [Reset].</p>
+<p><strong>Pregunta</strong>: complete el formulario [index.xhtml] y su plantilla [Form.java] para gestionar el botón [Raz].</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<p>El botón [Reset] restaura el formulario al estado en el que se encontraba cuando se solicitó por primera vez mediante una solicitud GET. Aquí hay varios retos. Algunos se han explicado en [<strong>ref3</strong>].</p>
-<p>El formulario devuelto por el botón [Raz] no es el formulario completo, sino solo la parte que <em>se ha rellenado</em>:</p>
+<p>El botón [Raz] devuelve el formulario al estado en el que se encontraba cuando se solicitó por primera vez mediante un GET. Aquí hay varias dificultades. Algunas se han explicado en [<a href="https://stahe.github.io/es-jsf2-pf-pfm-juin-2012/">ref3</a>].</p>
+<p>El formulario que devuelve el botón [Raz] no es el formulario completo, sino solo la parte <em>rellenada</em> del mismo:</p>
 <p><img src="images/100000000000027D0000010C4BD4E908.png" width="446" height="188" style="width:11.8cm;height:4.965cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027D0000010C4BD4E908.png" /></p>
-<p>Este resultado se puede lograr utilizando una etiqueta &lt;<strong>f:subview</strong>&gt; de la siguiente manera:</p>
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputText </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;#{form.feuilleSalaire.employe.indemnite.entretienJour} є&quot;</span><span style="color:#008080">&gt;</span></span></span>
-</code></pre></div>
-
-<p>La etiqueta &lt;<strong>f:subview</strong>&gt; engloba toda la parte del formulario que se puede mostrar u ocultar. Cualquier componente se puede mostrar u ocultar utilizando el atributo <strong>rendered</strong>. Si <em>rendered=&quot;true&quot;</em>, el componente se muestra; si <em>rendered=&quot;false&quot;</em>, no se muestra. Si el atributo <em>rendered</em> toma su valor del modelo, entonces la visualización del componente se puede controlar mediante programación.</p>
-<p>En el ejemplo anterior, controlaremos la visualización de la vista <em>viewInfos</em> utilizando el siguiente campo:</p>
+<p>Este resultado se puede obtener con una etiqueta &lt;<strong>f:subview</strong>&gt; utilizada de la siguiente manera:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">f:subview </span><span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;viewInfos&quot; </span><span style="color:#7f007f">rendered</span><span style="color:#000000">=</span>&quot;#{form.viewInfosIsRendered}&quot;<span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">... la partie du formulaire qu&#x27;on veut pouvoir ne pas afficher</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">f:subview</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-<p>junto con sus métodos <em>get</em> y <em>set</em>. Los métodos que gestionan los clics en los botones [Salario] y [Borrar] actualizarán este valor booleano dependiendo de si la vista <em>viewInfos</em> debe mostrarse o no.</p>
+<p>La etiqueta &lt;<strong>f:subview</strong>&gt; enmarca toda la parte del formulario que puede mostrarse u ocultarse. Cualquier componente puede mostrarse u ocultarse gracias al atributo <strong>rendered</strong>. Si <em>rendered=&quot;true&quot;</em>, el componente se muestra; si <em>rendered=&quot;false&quot;</em>, no se muestra. Si el atributo <em>rendered</em> toma su valor en el modelo, entonces la visualización del componente puede controlarse mediante programación.</p>
+<p>En el ejemplo anterior, se controlará la visualización de la vista <em>viewInfos</em> con el siguiente campo:</p>
+<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">boolean</span><span style="color:#000000"> </span><span style="color:#0000c0">viewInfosIsRendered</span><span style="color:#000000">;</span></span></span>
+</code></pre></div>
+
+<p>acompañado de sus métodos <em>get</em> y <em>set</em>. Los métodos que gestionan los clics en los botones [Salaire] y [Raz] actualizarán este booleano en función de si la vista <em>viewInfos</em> debe mostrarse o no.</p>
 
 
 
